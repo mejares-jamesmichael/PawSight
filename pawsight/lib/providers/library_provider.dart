@@ -41,17 +41,24 @@ class LibraryProvider with ChangeNotifier {
   }
 
   void filterByCategory(String? category) {
-    _selectedCategory = category == _selectedCategory ? null : category; // Toggle
+    _selectedCategory = category == _selectedCategory
+        ? null
+        : category; // Toggle
     _applyFilters();
   }
 
   void _applyFilters() {
     _filteredBehaviors = _allBehaviors.where((behavior) {
-      final matchesSearch = behavior.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          behavior.description.toLowerCase().contains(_searchQuery.toLowerCase());
-      
-      final matchesMood = _selectedMood == null || behavior.mood == _selectedMood;
-      final matchesCategory = _selectedCategory == null || behavior.category == _selectedCategory;
+      final matchesSearch =
+          behavior.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+          behavior.description.toLowerCase().contains(
+            _searchQuery.toLowerCase(),
+          );
+
+      final matchesMood =
+          _selectedMood == null || behavior.mood == _selectedMood;
+      final matchesCategory =
+          _selectedCategory == null || behavior.category == _selectedCategory;
 
       return matchesSearch && matchesMood && matchesCategory;
     }).toList();

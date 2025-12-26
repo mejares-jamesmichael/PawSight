@@ -123,9 +123,11 @@ class LibraryProvider with ChangeNotifier {
         case 'name':
         default:
           return a.name.compareTo(b.name);
-      }
+}
+
     });
 
     notifyListeners();
   }
 }
+

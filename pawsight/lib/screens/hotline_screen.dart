@@ -183,13 +183,14 @@ class _HotlineScreenState extends State<HotlineScreen> {
                             ),
                           ],
                         ),
-                      ),
-                    ],
-                  ),
-                ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
+
 
 /// Section header widget
 class _SectionHeader extends StatelessWidget {

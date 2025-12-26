@@ -57,5 +57,7 @@ class Behavior {
           ? DateTime.parse(map['last_updated'])
           : null,
     );
-  }
-}
+   }
+ }
+
+

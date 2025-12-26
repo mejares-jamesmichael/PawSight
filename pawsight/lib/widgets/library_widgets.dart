@@ -505,13 +505,14 @@ class BehaviorCard extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
   }
+}
+
 }
 
 /// Small badge widget for category/mood labels

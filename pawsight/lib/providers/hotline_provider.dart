@@ -58,3 +58,4 @@ class HotlineProvider extends ChangeNotifier {
   //   // TODO: Implement delete contact from database
   // }
 }
+

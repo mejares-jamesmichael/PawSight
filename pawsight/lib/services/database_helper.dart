@@ -360,3 +360,4 @@ class DatabaseHelper {
     db.close();
   }
 }
+

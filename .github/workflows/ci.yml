@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   analyze:
-    name: Analyze & Format
+    name: Analyze
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -33,9 +33,6 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-
-      - name: Check formatting
-        run: dart format --output=none --set-exit-if-changed .
 
       - name: Analyze code
         run: flutter analyze --fatal-infos

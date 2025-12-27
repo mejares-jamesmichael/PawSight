@@ -16,11 +16,11 @@ void main() {
     // Verify we have data
     expect(behaviors.isNotEmpty, true);
 
-    // Verify the count matches our seed data (15 items)
-    expect(behaviors.length, 15);
+    // Verify the count matches our seed data (44 items)
+    expect(behaviors.length, 44);
 
     // Verify content of the first item
-    expect(behaviors.first.name, 'Vertical Tail');
+    expect(behaviors.first.name, 'Tail Held High (Vertical)');
     expect(behaviors.first.category, 'Tail');
 
     await dbHelper.close();

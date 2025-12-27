@@ -15,8 +15,8 @@ class LibraryProvider with ChangeNotifier {
 
   // Filters
   String _searchQuery = '';
-  Set<String> _selectedMoods = {};
-  Set<String> _selectedCategories = {};
+  final Set<String> _selectedMoods = {};
+  final Set<String> _selectedCategories = {};
   String _sortBy = 'name'; // Options: 'name', 'category', 'mood'
 
   // Search debouncing
